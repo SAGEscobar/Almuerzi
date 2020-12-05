@@ -4,3 +4,96 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+body{
+    background-color: #eeeeee;
+}
+
+#app div{
+    flex: 1 0;
+    background-color: #ffffff;
+    margin: 0 5px;
+}
+
+#app{
+    width: 100%;
+    display: flex;
+}
+
+body div:first-child{
+    margin-left: 0;
+}
+
+#orders{
+    margin-left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul#meals-list li{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#submit{
+    background-color: #2a91bd;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 30px ;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+
+
+#submit:hover{
+    background-color: #1880a3;
+}
+
+#submit:disabled{
+    background-color: #ccc;
+}
+
+.selected{
+    background-color: #ccc;
+}
+
+.form-main{
+    background-color: #ffffff;
+    max-width: 400px;
+    height: 220px;
+    margin: 100px auto 0 auto!important;
+    border-radius: 8px;
+    box-shadow: 1px 2px 8px;
+}
+
+.form-main p{
+    text-align: center;
+}
+
+.form-main div{
+    margin: 0 auto 10px auto!important;
+}
+
+.form-main input{
+    border-radius: 5px;
+    background-color: #dedede;
+    border: none;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.submit{
+    background-color: #2a91bd!important;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none!important;
+    border-radius: 5px;
+    margin-left: 60px;
+    cursor: pointer;
+}

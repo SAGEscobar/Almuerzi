@@ -7,7 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main id="app"></main>
+    <template id="login-view">
+        <div class="form-main">
+            <p class="form-title">Login</p>
+            <form class="login-form" id="login-form">
+                <div>
+                    <label for="user">User Name</label>
+                    <input id="user-name" name="user" type="text" placeholder="Nombre de Usuario">
+                </div>
+                <div>
+                    <label for="pass">Contraseña</label>
+                    <input id="password" name="pass" type="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="submit">
+                </div>
+            </form>
+        </div>
+    </template>
+    <template id="orders-view">
+        <div id="meals">
+            <ul id="meals-list">
+                <p>Cargando...</p>
+            </ul>
+            <form id="order">
+                <input type="hidden" id="meals-id">
+                <input type="submit" value="Submit" id="submit" disabled>
+            </form>
+        </div>
+        <div id="orders">
+            <ul id="orders-list">
+                <p>Cargando...</p>
+            </ul>
+        </div>
+    </template>
 </body>
 <script src="main.js"></script>
 </html>
